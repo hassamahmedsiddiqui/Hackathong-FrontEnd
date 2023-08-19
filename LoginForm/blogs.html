@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Login</title>
+</head>
+<!-- AOS -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+<!-- CSS file -->
+<link rel="stylesheet" href="blog.css">
+<!-- CSS Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+<!-- Font-Awesome-Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+<!-- BoxIcons  -->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<body>
+    <nav class="navbar PersonalBlogging navbar-light bg-light justify-content-between">
+        <a class="navbar-brand nav  ">Personal Blogging .!</a>
+        <form class="form-inline">
+          <button class="lsBtn" ><a href="./profile.html">User Profile</a></button>
+          <button  class="lsBtn my-2 my-sm-0" ><a href="./signup.html">Logout </a></button>
+        </form>
+      </nav>
+    
+      <div class="container">
+        <div class="dashboard mt-2">
+            <div class="card postCard text-center">
+                <h3 class="card-header postCard-header">
+              Post Your Blog
+                </h3>
+                <div class="card-body" id="card-body">
+             
+                    <div class="mb-1 blog-input">
+                        <label for="exampleFormControlInput1" class="form-label" >Title</label>
+                        <input type="email" class="form-control" id="title" id="exampleFormControlInput1" placeholder="Write something">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label" >Text</label>
+                        <textarea itemid="text" id="text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                  <a href="#" id="post" class="psBtn mt-2"> Post Now</a>
+                </div>
+              </div>
+          </div>
+          
+          <div class="main-div" id="mainDiv">
+            <!-- <div class="blog-sec ">
+              <div class="card Blog text-center">
+                <h2 class="card-header">
+                  Hassam
+                </h2>
+                <div class="card-body">
+                  <h5 class="card-title"> <img  src="images/pic-2.png" alt="">Title</h5>
+                  <span class="Email" id="Email">hassam@gmail.com</span>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus at reprehenderit dicta ex, minus nobis ab minima dolores dolorem dignissimos deserunt, ducimus esse nemo sunt eveniet. Aspernatur dolore similique fuga?</p>
+                  <a href="#" class="btn btn-danger">Delete</a>
+                  <a href="#" class="btn btn-secondary">Edit</a>
+                </div>
+                
+              </div> -->
+            </div>
+          
+ <!-- AOS -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+     AOS.init({
+         duration: 1000,
+         mirror: true,
+         offset: 40,
+     });
+ </script>
+ <!-- BootStrap JS file -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+ crossorigin="anonymous"></script>
+    <script type="module" src="blogs.js"></script>
+</body>
+</html>
